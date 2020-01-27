@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Login.PagDepartmen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Login"
+             mc:Ignorable="d" Height="468.544" Width="834.618" Background="#FF121E95" >
+    <Grid Margin="185,0,-13,-21">
+        <DataGrid Name="Tmpil_employe" AutoGenerateColumns="True" Loaded="Tmpil_employe_Loaded"  HorizontalAlignment="Left" Height="328" VerticalAlignment="Top" Width="635" Margin="0,32,0,0"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="10,386,0,0" VerticalAlignment="Top" Width="130" Height="36" Background="#FFC51313"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="172,386,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.378,1.625" Height="36" Background="#FF28A40C"/>
+
+    </Grid>
+</UserControl>

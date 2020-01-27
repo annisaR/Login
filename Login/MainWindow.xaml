@@ -1,0 +1,47 @@
+﻿<Window x:Class="Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login"
+        mc:Ignorable="d"
+        Title="Hai,Selamat Datang " Height="450" Width="355" ShowInTaskbar="False" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF121E95"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Rectangle Fill="#FFD4D4EA" HorizontalAlignment="Left" Height="210" Margin="61,145,0,0" Stroke="#FF110D5F" VerticalAlignment="Top" Width="234" OpacityMask="White"/>
+        <TextBox Name="email" HorizontalAlignment="Left" Height="23" Margin="104,182,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="176"  BorderBrush="#FFF3F3F5" Cursor="Pen" />
+        <Button Content="Log In"  HorizontalAlignment="Left" Margin="123,288,0,0" VerticalAlignment="Top" Width="120" Height="26" FontWeight="Bold" FontFamily="Yu Gothic UI" FontSize="14" Background="#FF2AA81D" Cursor="Hand"  Name="loginbtn" Click="loginbtn_Click">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="Forgot password ?" HorizontalAlignment="Left" Margin="140,360,0,0" VerticalAlignment="Top" Width="155" Height="26" Foreground="White" OpacityMask="Black" Cursor="Pen">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Image  Source="image/icons2.png" HorizontalAlignment="Left" Height="92" Margin="123,53,0,0" VerticalAlignment="Top" Width="120"/>
+        <Image  Source="image/user.png" HorizontalAlignment="Left" Height="22" Margin="72,183,0,0" VerticalAlignment="Top" Width="27" OpacityMask="#FF850B0B"/>
+        <Image  Source="image/eyes.png" HorizontalAlignment="Left" Height="22" Margin="72,220,0,0" VerticalAlignment="Top" Width="27" OpacityMask="#FF6E0B0B"/>
+        <CheckBox Content="Remember me ?" HorizontalAlignment="Left" Height="17" Margin="82,256,0,0" VerticalAlignment="Top" Width="144"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="104,220,0,0" VerticalAlignment="Top" Width="176" Name="password" Height="22">
+            <PasswordBox.BorderBrush>
+                <ImageBrush/>
+            </PasswordBox.BorderBrush>
+        </PasswordBox>
+        <Button Content="Sig Up"  HorizontalAlignment="Left" Margin="151,319,0,0" VerticalAlignment="Top" Width="69" Height="26" FontWeight="Bold" FontFamily="Yu Gothic UI" FontSize="14" Background="#FF2D3693" Cursor="Hand"  x:Name="sigup" Click="sigupnbtn_Click">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+
+    </Grid>
+</Window>
